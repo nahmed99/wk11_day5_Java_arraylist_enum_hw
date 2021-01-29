@@ -24,6 +24,8 @@ public class Flight {
         this.destinationAirport = destinationAirport;
         this.departureTime = departureTime;
 
+        this.passengers = new ArrayList<>();
+
     }
 
     public int getSeatsAvailable() {
@@ -31,7 +33,9 @@ public class Flight {
     }
 
     public void bookPassenger(Passenger passenger) {
-        passengers.add(passenger);
+        if (getSeatsAvailable() > 0) {
+            passengers.add(passenger);
+        }
     }
 
 }
