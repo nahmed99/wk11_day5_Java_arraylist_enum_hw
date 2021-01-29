@@ -26,5 +26,5 @@ public class Passenger {
     public void setNumOfBags() {
         this.numOfBags = numOfBags;
     }
-    
+
 }
