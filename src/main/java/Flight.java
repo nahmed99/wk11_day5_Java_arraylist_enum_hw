@@ -28,6 +28,14 @@ public class Flight {
 
     }
 
+    public Plane getPlane() {
+        return this.plane;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
     public int getSeatsAvailable() {
         return plane.getCapacity() - passengers.size();
     }
